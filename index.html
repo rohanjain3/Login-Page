@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <video autoplay loop muted plays-inline class="back-video">
+      <source src="image/1.mp4" type="video/mp4" />
+    </video>
+    <!-- NAVBAR CREATION-->
+    <header class="header">
+      <nav class="navbar">
+        <a href="welcome.html">HOME</a>
+        <a href="https://www.spacex.com/vehicles/falcon-9/">FALCON-9</a>
+        <a href="https://www.spacex.com/vehicles/falcon-heavy/">FALCON-HEAVY</a>
+        <a href="https://www.spacex.com/human-spaceflight/">HUMAN-SPACEFLIGHT</a>
+        <a href="https://www.spacex.com/vehicles/starship/">STARSHIP</a>
+      </nav>
+      <form action="" class="searchbar">
+        <input type="text" placeholder="Search..." />
+        <button><i class="fa fa-search"></i></button>
+      </form>
+      <img src="image/logo-png.png" width="60px" height="70px" alt="" />
+    </header>
+    <!--LOGIN FORM CREATION-->
+    <div class="background"></div>
+    <div class="container">
+      <div class="item">
+        <h1 class="logo"><i class="bx bxl-unity"></i>SpaceR</h1>
+        <div class="text-item">
+          <h1>
+            Welcome! <br />
+            <span> To Infinity <i class="bx bx-infinite"></i> </span>
+          </h1>
+          <br />
+          <p>
+            “You want to wake up in the morning and think the future is going to
+            be great - and that’s what being a spacefaring civilization is all
+            about. It’s about believing in the future and thinking that the
+            future will be better than the past. And I can’t think of anything
+            more exciting than going out there and being among the stars.”
+          </p>
+          <br />
+          <p>-Elon Musk</p>
+          <div class="social-icon">
+            <a href="https://www.instagram.com/spacex/" target="_main"><i class="bx bxl-meta"></i></a>
+            <a href="https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.spacex.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fspacex" target="_main"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://www.youtube.com/spacex" target="_main"><i class="bx bxl-youtube"></i></a>
+            <a href="https://en.wikipedia.org/wiki/SpaceX"
+            target="_main"><i class="bx bxl-wikipedia"></i
+            ></a>
+            <a href="https://twitter.com/spacex" target="_main"><i class="bx bxl-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="login-section">
+        <div class="form-box login">
+          <form action="">
+            <h1 class="signin-head">Sign In</h1>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-envelope"></i></span>
+              <!-- <input type="email" required>
+                    <label for="Email">Email</label> -->
+              <input type="email" required />
+              <label class="emailid" for="email">Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+              <input type="password" required />
+              <label for="Password">Password</label>
+            </div>
+            <div class="remenber-password">
+              <label class="remclass" for=""
+                ><input type="checkbox" />Remember Me</label
+              >
+              <a href="forgot.html">Forgot Password</a>
+            </div>
+            <br />
+            <button class="btn">Loge In</button>
+            <div class="create-account">
+              <p>
+                Create A New Account?
+                <a href="signup.html" class="register-link">Sign Up</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--SIGN UP FORM CREARTION-->
+    <script src="index.js"></script>
+  </body>
+</html>

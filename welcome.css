@@ -1,0 +1,161 @@
+@import url(https://fonts.google.com/specimen/Poppins);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+    color: #fff;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    font: rgb(255,255,255);
+    
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+.background{
+    /* background: url('image/pexels-miriam-espacio-110854.jpg') no-repeat ; */
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: whitesmoke; */
+    padding: 25px 13%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.navbar a{
+    position: relative;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.navbar a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background:#fff;
+    bottom: -5px;
+    border-radius: 5px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: .3s;
+}
+.navbar a:hover:after{
+    transform: translateY(0);
+    opacity: 1;
+}
+.searchbar{
+    width: 250px;
+    height: 45px;
+    background-color: transparent;
+    border: 2px solid wheat;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.searchbar input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(248, 248, 248);
+    font-size: 16px;
+    padding-left: 10px;
+}
+.searchbar button{
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+
+}
+.searchbar input ::placeholder{
+    color: rgb(225, 234, 234);
+}
+.searchbar button i{
+    font-size: 22px;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+    height: 550px;
+    margin-top: 30px;
+    /* background:grey; */
+    background: url('image/pexels-miriam-espacio-110854.jpg') no-repeat ;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    
+}
+.row{
+    display: flex;
+    height: 100%;
+    align-items: right;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: #fff;
+    font-size: 50px;
+}
+p{
+    color: #fff;
+    font-size: 30px;
+    line-height: 35px;
+}
+h2{
+    color: #fff;
+    font-size: 40px;
+    margin-left: 200px;
+}
+.social-icon{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.social-icon a:hover i{
+    transform: scale(1.2);
+}
